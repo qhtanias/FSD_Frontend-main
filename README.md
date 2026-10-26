@@ -1,1 +1,2 @@
-# FSD_Frontend-main
+# FSD_Frontend
+Creating a Rich Frontend
