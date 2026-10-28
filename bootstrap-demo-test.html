@@ -11,6 +11,7 @@
 <body>
     <div class="container mt-3">
 
+        <section>
             <p>BUTTONS:</p>
         </section>
         <button type="button" class="btn btn-primary">
@@ -19,44 +20,73 @@
         </button>
         <a class="btn btn-primary" href="#" role="button">Link</a>
         <button class="btn btn-primary" type="submit">Button</button>
-        <label>
-        <section>
+
         <hr />
-        <section>
-       
-            <label class="btn btn-primary">
+
+        <label class="btn btn-primary">
             <input type="radio" name="options" id="option3" autocomplete="off" />
         </label>
-        </section>
+
+        <hr />
+
         <section>
             <form>
-                <div class="form-group">
-                    <label for="fname">First Name:</label>
-                    <input type="text" class="form-control" id="fname" placeholder="Enter first name">
+                <!-- First Name + Last Name (same row) -->
+                <div class="row form-group">
+                    <div class="col-sm-5 offset-sm-2">
+                        <label for="fname" class="col-form-label">First Name:</label>
+                        <input type="text" class="form-control" id="fname" placeholder="Enter first name">
+                    </div>
+                    <div class="col-sm-5">
+                        <label for="lname" class="col-form-label">Last Name:</label>
+                        <input type="text" class="form-control" id="lname" placeholder="Enter last name">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="lname">Last Name:</label>
-                    <input type="text" class="form-control" id="lname" placeholder="Enter last name">
+
+                <!-- Email -->
+                <div class="row form-group">
+                    <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+
+                <!-- Password -->
+                <div class="row form-group">
+                    <label for="pwd" class="col-sm-2 col-form-label">Password:</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+
+                <!-- Readonly -->
+                <div class="row form-group">
+                    <div class="col-sm-10 offset-sm-2">
+                        <input type="text" class="form-control" placeholder="Readonly" readonly>
+                    </div>
                 </div>
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> Remember me
-                    </label>
+
+                <!-- Remember me -->
+                <div class="row form-group">
+                    <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="remember">
+                            <label class="form-check-label" for="remember">Remember me</label>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+
+                <!-- Submit -->
+                <div class="row form-group">
+                    <div class="col-sm-10 offset-sm-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
             </form>
         </section>
-        <section>
+
         <hr />
-        <section>
+
         <section>
             <p>BADGES:</p>
         </section>
@@ -70,7 +100,7 @@
 
         <h1 class="text-primary mt-4">Example Form</h1>
         <p>
-            Designed by: 
+            Designed by:
             <a href="https://www.linkedin.com/in/ahmed-alqahtani-a3982696/" target="_blank">Vertex</a>
         </p>
         <p>button: <button class="btn btn-primary">Click Me</button></p>
