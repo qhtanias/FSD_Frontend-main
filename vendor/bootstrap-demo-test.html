@@ -5,12 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap CSS (needed for btn/badge classes to render) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <h1 class="text-primary">Example Form</h1>
-    Designed by: <a href="https://www.linkedin.com/in/ahmed-alqahtani-a3982696/" target="_blank">
-        Vertex</a>
-button: <button class="btn btn-primary">Click Me</button>
+    <div class="container mt-3">
 
+        <section>
+            <p>BUTTONS:</p>
+        </section>
+        <button type="button" class="btn btn-primary">
+            Profile: <span class="badge badge-light">4</span>
+            <span class="sr-only">unread messages</span>
+        </button>
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-primary" type="submit">Button</button>
+
+        <section>
+            <p>BADGES:</p>
+        </section>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-danger">Danger</span>
+        <span class="badge badge-dark">Dark</span>
+        <p></p>
+        <span class="badge badge-pill badge-info">Info</span>
+        <span class="badge badge-pill badge-warning">Warning</span>
+        <span class="badge badge-pill badge-secondary">Secondary</span>
+
+        <h1 class="text-primary mt-4">Example Form</h1>
+        <p>
+            Designed by: 
+            <a href="https://www.linkedin.com/in/ahmed-alqahtani-a3982696/" target="_blank">Vertex</a>
+        </p>
+        <p>button: <button class="btn btn-primary">Click Me</button></p>
+
+    </div>
 </body>
 </html>
