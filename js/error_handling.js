@@ -6,3 +6,4 @@ try {
 } catch (err) {
     console.log("Error has occurred!");
 }
+console.log("After try block");

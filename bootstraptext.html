@@ -11,14 +11,6 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <!-- External CSS -->
-    <!-- <link rel="stylesheet" href="css/demoform.css" /> -->
-    <!-- Internal CSS -->
-    <!-- <style>
-      input#lname {
-        width: 50px;
-      }
-    </style> -->
   </head>
   <body>
     <h1 class="text-primary">Example Text Styles:</h1>
@@ -31,7 +23,9 @@
 
     <p class="text-light bg-dark">This is a test &nbsp;&nbsp; text.</p>
 
-    <!-- <script src="vendor/bootstrap-4.6.0-dist/js/bootstrap.js"></script> -->
+    <!-- Added the missing target element -->
+    <div id="insertionBox"></div>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -47,5 +41,11 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      // innerText is a PROPERTY, not a function.
+      // Use innerHTML if you want the <hr> to render as an element.
+      document.getElementById("insertionBox").innerHTML =
+        "Hello Javacription! <hr />";
+    </script>
   </body>
 </html>
