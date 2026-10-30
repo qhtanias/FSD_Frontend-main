@@ -13,7 +13,8 @@
 let user = {
     name: "John Doe",
     company: "Acme Corporation",
-    profession: "Software Engineer",
+    profession: "web developer",
     email: "qhtanias@hotmail.com"
 };
 console.log(user.email);
+console.log(user);
